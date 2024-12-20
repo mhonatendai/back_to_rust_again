@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("This is just a simple program to check the setup!");
 }
