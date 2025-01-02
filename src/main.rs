@@ -37,4 +37,31 @@ fn main() {
     println!("The value of tendai is: {tendai}");
     println!("The value of tindo is: {tindo}");
     println!("The value of tin is: {tin}");
+
+    println!();
+    println!("Numeric operations, not all, just the tricky ones");
+    let quotient = 56.7 / 32.2;
+    let truncated = -5 / 3; // Results in -1
+
+    // remainder
+    let remainder = 43 % 5;
+    println!("Value of remainder is: {remainder}");
+    println!("Quotient is: {quotient}, Truncated is: {truncated}");
+
+    println!("The Character Type");
+    let c = 'z';
+    let z: char = 'ℤ'; // with explicit type annotation
+    let heart_eyed_cat = '😻';
+    println!("Value of heart_eyed_cat is: {heart_eyed_cat}");
+
+    println!();
+    println!("All along we have been dealing with Scalar types, which only represent a single value. Let us take a look at compound types now.");
+    println!();
+    println!("Compound types can group multiple values into one type. Rust has two primitive compound types: tuples and arrays.");
+
+    println!("Tuple examples");
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let tup1 = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("The value of y is: {y}");
 }
