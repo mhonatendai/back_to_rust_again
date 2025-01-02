@@ -62,6 +62,25 @@ fn main() {
     println!("Tuple examples");
     let tup: (i32, f64, u8) = (500, 6.4, 1);
     let tup1 = (500, 6.4, 1);
-    let (x, y, z) = tup;
+    let (x, y, z) = tup;// Destructuring, breaking the single tuple into 3 parts.
     println!("The value of y is: {y}");
+
+    println!("Accessing tuple elements using the period(.)");
+
+    let five_hundred = tup.0;
+
+    let six_point_four = tup.1;
+
+    let one = tup.2;
+    println!("{} and {} and {}", five_hundred, six_point_four, one);
+
+    println!();
+    println!("We move one to Arrays as the second type of compound data type.");
+    println!("Specify data type and size but that can be inferred.");
+    let months: [&str;12] = ["January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"];
+    println!("Months are: {:?}", months);
+
+    let same_value_for_all_five_elements = [3; 5];
+    println!("Same Value for all elements");
 }
