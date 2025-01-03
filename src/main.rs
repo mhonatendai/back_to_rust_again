@@ -73,14 +73,17 @@ fn main() {
 
     let one = tup.2;
     println!("{} and {} and {}", five_hundred, six_point_four, one);
+    arrays_examples();
+}
 
+fn arrays_examples(){
     println!();
     println!("We move one to Arrays as the second type of compound data type.");
-    println!("Specify data type and size but that can be inferred.");
+    println!("You can specify data type and size when declaring an array but that can be inferred.");
     let months: [&str;12] = ["January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December"];
     println!("Months are: {:?}", months);
 
     let same_value_for_all_five_elements = [3; 5];
-    println!("Same Value for all elements");
+    println!("Same Value for all elements: {:?}", same_value_for_all_five_elements);
 }
